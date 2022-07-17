@@ -1,0 +1,16 @@
+BASE
+https://www.ifood.com.br/restaurantes
+https://www.mercadolivre.com.br/
+
+/*--ICONS--*/
+https://react-icons.github.io/react-icons
+
+/*--FRAMEWORK OF FRONTEND --*/
+https://tailwindcss.com/
+
+/*--DESIGN BASE *--/
+https://dribbble.com/shots/18397732-Winkel-POS-System-of-Food-Shop
+https://tailwindcollections-pos-dark-dashboard.netlify.app/
+
+/*--API--*/
+https://www.npmjs.com/package/cielo - CIELO
