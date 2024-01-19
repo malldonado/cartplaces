@@ -4,11 +4,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // colors : { 
-      //   'regal-blue' : '#0b1e40',
-      // },
+      colors : { 
+        'regal-blue' : '#0b1e40',
+      },
       zIndex: {
         '-1': '-1',
+      },
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },

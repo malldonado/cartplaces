@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h-newscreen {
+    height: calc(100vh - 15vh) !important;
+}
+
+.nunito-font {
+    font-family: 'Nunito', sans-serif;
+}

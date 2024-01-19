@@ -1,29 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import './App.css';
-import Dashboard from './components/Dashboard.jsx';
-import Tags from './components/index/Tags';
-import Index from './components/index/Navbar';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Index from "./components/Index.jsx";
+import Login from "./components/Login.jsx";
+import Register from "./components/Register.jsx";
 
 function App() {
-
-    const [backendData, setBackendData] = useState([{}])
-
-    useEffect(() => {
-        fetch("/api").then(
-            response => response.json()
-        ).then(
-            data => {
-                setBackendData(data)
-            }
-        )
-    }, [])
-
-    return (
-        <div>
-            <Index></Index>
-            <Tags></Tags>
-        </div>
-    );
+  return (
+    <>
+      {/* <Index /> */}
+      <Login />
+      {/* <Register/> */}
+    </>
+  );
 }
 
 export default App;

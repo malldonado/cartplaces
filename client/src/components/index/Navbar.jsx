@@ -1,45 +1,40 @@
-import React from 'react'
-import LogoIndex from '../../images/logo/logo_index.png'
-import { MdOutlineSearch } from "react-icons/md";
-import { BsArrowDown } from "react-icons/bs";
-import { BsBoxArrowInRight } from "react-icons/bs";
+import React from "react";
+import LogoIndex from "../../images/logo/logo.svg";
+import Profile from "../../images/profile/img.png";
 import { RiShoppingBag3Line } from "react-icons/ri";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { IoSearch } from "react-icons/io5";
+// import { MdOutlineSearch } from "react-icons/md";
+// import { BsArrowDown } from "react-icons/bs";
+// import { BsBoxArrowInRight } from "react-icons/bs";
+// import { RiShoppingBag3Line } from "react-icons/ri";
 
-function index() {
+function Navbar() {
   return (
-      <div>
-        <nav className="bg-gradient-to-r from-[#2746d5] to-[#205acc]">
-          <div className="h-16 flex mx-auto px-2 sm:px-6 lg:px-8 max-w-[1400px]">
-            <div></div>
-            <img className="h-6 my-auto px-10" src={LogoIndex}/>
-            <ul className="flex my-auto">
-              <li className="font-medium my-auto text-white px-2">Categorias</li>
-              <li className="font-medium my-auto text-white px-2">Ofertas</li>
-              <li className="font-medium my-auto text-white px-2">Histórico</li>
-              <li className="font-medium my-auto text-white px-2">Vender</li>
-              <li className="px-8 flex relative">
-                <input className="h-12 w-[500px] rounded-md px-2 placeholder:text-[#717171] text-[#2746d5] font-sans placeholder:font-thin font-semibold" placeholder="Busque por um item ou loja"></input>
-                <MdOutlineSearch className="h-8	my-auto text-3xl text-[#2746d5] absolute bottom-0 top-0 right-10"/>
-              </li>
-              <li className="h-auto my-auto px-4">
-                <BsArrowDown className="text-2xl text-white"/>
-              </li>
-              <li className="h-auto my-auto px-4">
-                <BsBoxArrowInRight className="text-3xl text-white"/>
-              </li>
-              <li className="flex h-auto my-auto px-4">
-                <RiShoppingBag3Line className="text-3xl text-white"/>
-                <div className="text-center text-white px-1">
-                  <label className="text-[12px] leading-[1]">R$ 0,00</label>
-                  <p className="text-[9px] leading-[1]">0 items</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-  )
+    <div>
+      <nav className="bg-white">
+        <div className="h-16 flex mx-auto px-2 sm:px-6 lg:px-8 max-w-[1200px] flex-wrap justify-center items-center">
+          <img className="h-[36px] my-auto" src={LogoIndex} />
+          <p className="flex font-sans text-[18px] mx-[90px]">
+            <FaMapMarkerAlt className="fill-[#2144e1] mr-[5px] text-sm mt-[5px]" />
+            Current Location:{" "}
+            <b className="pl-2">
+              {" "}
+              Av. Europa, 1626, Vila Santa Maria, Americana - SP
+            </b>
+          </p>
+            <IoSearch className="fill-[#2144e1] text-[25px] mr-12" />
+            {/* <input placeholder="Search..." className="mx-1 h-[25px] p-1 outline-none border border-[#2144e1]"/> */}
+          <RiShoppingBag3Line className="fill-[#2144e1] text-[25px] mr-12"/>
+          <img
+            className="border-solid border-spacing-[2px] rounded-xl border-[#243c5a] w-[26px]"
+            src={Profile}
+            alt=""
+          />
+        </div>
+      </nav>
+    </div>
+  );
 }
 
-export default index
+export default Navbar;

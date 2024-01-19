@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../images/logo/logo_index.png';
+import logo from '../../../images/logo/logo.svg';
 import { BsFillHouseFill } from "react-icons/bs";
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
                             <BsFillHouseFill className="text-2xl" />
         
@@ -35,7 +35,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
                             <svg
                                 className="h-5 w-5"
@@ -58,7 +58,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
         
                             <svg
@@ -84,7 +84,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
                             <svg
                                 className="h-5 w-5"
@@ -110,7 +110,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
                             <svg
                                 className="h-5 w-5"
@@ -147,7 +147,7 @@ function Header() {
                     <li className="hover:bg-gray-100">
                         <a
                             href="."
-                            className="h-16 px-6 flex flex justify-center items-center w-full
+                            className="h-16 px-6 flex justify-center items-center w-full
                             focus:text-orange-500">
                             <svg
                                 className="h-5 w-5"
@@ -172,7 +172,7 @@ function Header() {
                 <div className="mt-auto h-16 flex items-center w-full">
                     {/* <!-- Action Section --> */}
                     <button
-                        className="h-16 w-10 mx-auto flex flex justify-center items-center
+                        className="h-16 mx-auto flex justify-center items-center
                         w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
                         <svg
                             className="h-5 w-5 text-red-700"
