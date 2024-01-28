@@ -19,9 +19,9 @@ function Categories() {
         </div>
       </div>
       <div className="flex justify-center items-center h-auto mt-10">
-       <div className="">
+       <div className="cursor-pointer relative">
         <img className="h-[150px]" src={Image} alt="" />
-        <p className="text-center font-medium">Clothes</p>
+        <p className="text-center text-[18px] font-bold">Clothes</p>
        </div>
       </div>
     </div>

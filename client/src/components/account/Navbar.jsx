@@ -4,10 +4,6 @@ import Profile from "../../images/profile/img.png";
 import { RiShoppingBag3Line } from "react-icons/ri";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
-// import { MdOutlineSearch } from "react-icons/md";
-// import { BsArrowDown } from "react-icons/bs";
-// import { BsBoxArrowInRight } from "react-icons/bs";
-// import { RiShoppingBag3Line } from "react-icons/ri";
 
 function Navbar() {
   return (

@@ -17,11 +17,11 @@ function Banner() {
           </p>
           <div className="w-[90%] bg-white h-[150px] rounded-xl mt-5 block">
             <div className="flex items-center h-[50%] border-b-[1px] border-[#eee]">
-              <div className="w-[100px] flex bg-[#c9ddff] h-[45px] justify-center items-center text-[#2144e1] font-bold text-sm rounded-md ml-4">
+              <div className="w-[100px] flex bg-[#c9ddff] h-[45px] justify-center items-center text-[#2144e1] font-bold text-sm rounded-md ml-4 cursor-pointer">
                 <HiShoppingBag className="mr-1" />
                 Products
               </div>
-              <div className="w-[100px] flex h-[45px] justify-center items-center text-[#757575] font-bold text-sm rounded-md">
+              <div className="w-[100px] flex h-[45px] justify-center items-center text-[#757575] font-bold text-sm rounded-md cursor-pointer">
                 <RiMapPinLine className="mr-1" />
                 Stores
               </div>
@@ -32,7 +32,7 @@ function Banner() {
                 type="text"
                 placeholder="Search products..."
               />
-              <button className="w-[15%] bg-[#2144e1] text-white flex justify-center items-center h-[45px] rounded-md ml-2 font-medium">
+              <button className="w-[15%] bg-[#2144e1] text-white flex justify-center items-center h-[45px] rounded-md ml-2 font-medium cursor-pointer">
                 <IoSearch className="mr-1" />
                 Search
               </button>

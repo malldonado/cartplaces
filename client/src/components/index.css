@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.h-newscreen {
-    height: calc(100vh - 15vh) !important;
+.h-mainscreen {
+    height: calc(100vh - 64px) !important;
 }
 
 .nunito-font {
