@@ -14,15 +14,15 @@ function Footer() {
             <li>8 W.South St.Buford, GA 30518</li>
             <li>5 Briarwood LaneVienna, VA 22180 RER</li>
             <li className="flex justify-start gap-3 mt-4">
-              <a className="text-[26px] cursor-pointer" href="">
+              <span className="text-[26px] cursor-pointer" href="">
                 <FaFacebookSquare />
-              </a>
-              <a className="text-[26px] cursor-pointer" href="">
+              </span>
+              <span className="text-[26px] cursor-pointer" href="">
                 <RiInstagramFill />
-              </a>
-              <a className="text-[26px] cursor-pointer" href="">
+              </span>
+              <span className="text-[26px] cursor-pointer" href="">
                 <FaSquareXTwitter />
-              </a>
+              </span>
             </li>
           </ul>
         </div>

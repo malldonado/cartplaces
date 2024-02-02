@@ -4,6 +4,8 @@ import Index from "./components/Index.jsx";
 import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
 import Account from "./components/Account.jsx";
+import Dash from "./components/Dash.jsx";
+
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       {/* <Index /> */}
       {/* <Login /> */}
       {/* <Register/> */}
-      <Account/>
+      {/* <Account/> */}
+      <Dash/>
     </>
   );
 }
