@@ -1,23 +1,21 @@
 import React from "react";
+import { FaHouse } from "react-icons/fa6";
+import Logo from "../../images/logo/logo.svg";
 
 function Navbar() {
   return (
-    <div className="p-6 h-full">
-      <div className="max-w-[300px] bo h-full bg-gray-800 rounded-[15px]">
+    <div className="p-6 h-full w-[20%]">
+      <div className="max-w-[300px] bo h-full bg-white rounded-[15px] border-[1px] border-[#eee]">
         <div className="flex items-center">
           <img alt="" className="h-9" />
         </div>
         <div className="block md:block w-full">
+          <img src={Logo} alt="" className="h-[40px] mx-auto mb-10" />
           <span
             href="#"
-            class="bg-gray-900 flex justify-start px-4 items-center text-white w-full h-14 py-2 text-[16px] font-bold nunito-font my-1 hover:text-black hover:bg-white cursor-pointer"
+            class="bg-white flex justify-start px-4 items-center text-black w-[90%] mx-auto h-14 py-2 text-[16px] font-bold nunito-font my-3 hover:text-white hover:bg-black cursor-pointer rounded-[10px] hover:fill-white fill-black duration-300"
           >
-            Dashboard
-          </span>
-          <span
-            href="#"
-            class="bg-gray-900 flex justify-start px-4 items-center text-white w-full h-14 py-2 text-[16px] font-bold nunito-font uppercase my-1 hover:text-black hover:bg-white cursor-pointer"
-          >
+            <FaHouse className="mr-2" />
             Dashboard
           </span>
         </div>

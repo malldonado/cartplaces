@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 //routes
-readdirSync('./routes/seller/').map((r) => app.use('/', require('./routes/seller/' + r)));
+readdirSync('./routes/').map((r) => app.use('/', require('./routes/' + r)));
 
 //database
 mongoose.connect(process.env.DATABASE_URL, {
