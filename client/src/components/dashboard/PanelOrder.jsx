@@ -3,8 +3,8 @@ import { Table } from "evergreen-ui";
 
 function PanelOrder() {
   return (
-    <Table marginTop="20px" marginLeft='30px' width="35%">
-        <Table.Head>
+    <Table marginTop="20px" marginLeft='30px' width="35%" color='#000' background='#fff'>
+        <Table.Head color='#000'>
           <Table.SearchHeaderCell />
           <Table.TextHeaderCell>Last Activity</Table.TextHeaderCell>
           <Table.TextHeaderCell>ltv</Table.TextHeaderCell>

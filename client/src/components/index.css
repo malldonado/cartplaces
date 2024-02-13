@@ -11,3 +11,7 @@
 .nunito-font {
     font-family: 'Nunito', sans-serif;
 }
+
+.sf-ui-text {
+    font-family: "SF UI Text", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
