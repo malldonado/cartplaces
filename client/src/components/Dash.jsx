@@ -1,12 +1,12 @@
-import Navbar from "./dashboard/Navbar"
-import Panel from "./dashboard/Panel";
+import ContainerPanel from "./dashboard/ContainerPanel";
+import NavbarLeft from "./dashboard/NavbarLeft"
 import './index.css';
 
 function Dash() {
   return (
    <div className="h-screen bg-[#f5f7f8] flex">
-        <Navbar/>
-        <Panel/>
+        <NavbarLeft/>
+        <ContainerPanel/>
    </div>
   )
 }
