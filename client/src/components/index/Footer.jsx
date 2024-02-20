@@ -3,6 +3,7 @@ import Logo from "../../images/logo/logo.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -10,7 +11,9 @@ function Footer() {
       <div className="flex w-full justify-center items-center h-full">
         <div className="items-center w-[30%] flex justify-center">
           <ul className="text-white">
-            <img className="h-[36px] mb-8" src={Logo} alt="" />
+            <Link to='/'>
+              <img className="h-[36px] mb-8 cursor-pointer" src={Logo} alt="" />
+            </Link>
             <li>8 W.South St.Buford, GA 30518</li>
             <li>5 Briarwood LaneVienna, VA 22180 RER</li>
             <li className="flex justify-start gap-3 mt-4">

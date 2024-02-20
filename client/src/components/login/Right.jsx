@@ -1,11 +1,19 @@
 import React from "react";
 import LogoIndex from "../../images/logo/logo.svg";
+import Index from "../Index";
+import { Link } from 'react-router-dom';
 import "../index.css";
 
 function Right() {
   return (
     <div className="w-[45%] flex flex-col items-center justify-center h-screen">
-      <img src={LogoIndex} className="h-[40px] mt-8 ml-8" alt="" />
+      <Link to="/">
+        <img
+          src={LogoIndex}
+          className="h-[40px] mt-8 ml-8 cursor-pointer"
+          alt=""
+        />
+      </Link>
       <div className="mt-10 w-[50%]">
         <h2 className="text-[26px] font-bold nunito-font">Login</h2>
         <p className="nunito-font text-[14px] mt-4 text-gray-500">
