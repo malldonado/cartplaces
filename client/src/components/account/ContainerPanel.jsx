@@ -1,10 +1,10 @@
 import React from "react";
-import NavbarTop from "./NavbarTop";
 import PanelTable from "./PanelTable";
 import PanelOrder from "./PanelOrder";
 import PanelGraphics from "./PanelGraphics";
 import PanelGraphicsTwo from "./PanelGraphicsTwo";
 import PanelGraphicsThree from "./PanelGraphicsThree";
+import PanelOne from "./PanelOne";
 
 function ContainerPanel() {
   return (
@@ -22,6 +22,7 @@ function ContainerPanel() {
          {/* <PanelTable/>
           <PanelOrder/> */}
       </div>
+      {/* <PanelOne/> */}
     </div>
   );
 }

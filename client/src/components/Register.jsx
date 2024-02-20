@@ -4,7 +4,7 @@ import Right from './register/Right'
 
 function Register() {
   return (
-    <div class="flex justify-center mx-auto md:h-screen">
+    <div className="flex justify-center mx-auto md:h-screen">
       <Left/>
       <Right/>
     </div>
