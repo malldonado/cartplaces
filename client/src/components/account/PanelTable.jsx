@@ -3,9 +3,9 @@ import { Table } from "evergreen-ui";
 
 function PanelTable() {
   return (
-    <>
-      <Table marginTop="20px" width="60%" color='#000' background="#fff">
-        <Table.Head color='#000'>
+    <div className="w-[50%]">
+      <Table className="panel-cards" borderColor="#e5e7eb" marginTop="20px" width="100%" color='#000' background="#fff">
+        <Table.Head color='#000' borderColor="#e5e7eb" backgroundColor="#fff" background="#fff">
           <Table.SearchHeaderCell />
           <Table.TextHeaderCell>Last Activity</Table.TextHeaderCell>
           <Table.TextHeaderCell>ltv</Table.TextHeaderCell>
@@ -21,7 +21,7 @@ function PanelTable() {
         ))} */}
         </Table.VirtualBody>
       </Table>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import '../index.css';
 function NavbarLeft() {
   return (
     <div className="p-6 h-full w-[20%] mt-2">
-      <div className="max-w-[300px] h-full rounded-[10px] border-[1px]">
+      <div className="max-w-[300px] h-full rounded-[10px] border-[1px] bg-white panel-cards">
         <div className="block md:block w-full">
           <span
             href="#"

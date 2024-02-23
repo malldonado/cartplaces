@@ -19,3 +19,7 @@
 .shadow-navbar {
     box-shadow: 0 0 1px rgba(67, 90, 111, 0.3), 0 8px 10px -4px rgba(67, 90, 111, 0.47);
 }
+
+.panel-cards {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
