@@ -24,6 +24,15 @@ function NavbarLeft() {
               Home
             </Link>
           </li>
+          <li className="inline-flex items-center">
+            <Link
+              to={"/"}
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              <MdKeyboardArrowRight />
+              Seller
+            </Link>
+          </li>
           <li aria-current="page">
             <div className="flex items-center">
               <MdKeyboardArrowRight />
@@ -52,7 +61,7 @@ function NavbarLeft() {
             <li>
               <Link className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                 <BsPersonFill className="w-6 h-6 mr-2" />
-                Profile
+                Products
               </Link>
             </li>
             <li>
@@ -61,7 +70,19 @@ function NavbarLeft() {
                 className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <MdSell className="w-6 h-6 mr-2" />
-                Seller
+                Orders
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <IoIosSettings className="w-6 h-6 mr-2" />
+                Finance
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                <IoIosSettings className="w-6 h-6 mr-2" />
+                Discount
               </Link>
             </li>
             <li>

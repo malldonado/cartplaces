@@ -1,9 +1,41 @@
-import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+import React, { useState, useEffect } from "react";
+import { IoIosArrowForward, IoIosArrowBack  } from "react-icons/io";
 import Image from '../../images/index/1.png'
 
 function Categories() {
+
+  const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/categories");
+        if (!response.ok) {
+          throw new Error("Erro ao carregar os dados");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+        console.log(jsonData)
+      } catch (error) {
+        setError(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (isLoading) {
+    return <div>Carregando...</div>;
+  }
+
+  if (error) {
+    return <div>Erro: {error.message}</div>;
+  }
+
   return (
     <div className="max-w-[1200px] mx-auto mt-[70px]">
       <div className="flex w-full">
@@ -20,8 +52,12 @@ function Categories() {
       </div>
       <div className="flex justify-center items-center h-auto mt-10">
        <div className="cursor-pointer relative">
-        <img className="h-[150px]" src={Image} alt="" />
-        <p className="text-center text-[18px] font-bold">Clothes</p>
+         {data.map(datas => (
+          <div key={datas._id}>
+            <img className="h-[150px]" src={datas.src} alt="" />
+            <p className="text-center text-[16px] font-bold mt-2">{datas.name}</p>
+          </div>
+        ))}
        </div>
       </div>
     </div>

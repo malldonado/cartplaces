@@ -5,6 +5,9 @@ import { IoSearch } from "react-icons/io5";
 import Map from "../../images/index/map.svg";
 
 function Banner() {
+
+  const [isColor, setColor] = React.useState(false);
+
   return (
     <div className="bg-gradient-to-r from-[#2144e1] to-blue-500 w-full h-[500px]">
       <div className="flex max-w-[1200px] h-[100%] mx-auto justify-center items-center">
@@ -21,7 +24,7 @@ function Banner() {
                 <HiShoppingBag className="mr-1" />
                 Products
               </div>
-              <div className="w-[100px] flex h-[45px] justify-center items-center text-[#757575] font-bold text-sm rounded-md cursor-pointer">
+              <div className="w-[100px] flex h-[45px] justify-center items-center text-[#757575] font-bold text-sm rounded-md cursor-pointer focus:text-[#2144e1] focus:bg-[#c9ddff]">
                 <RiMapPinLine className="mr-1" />
                 Stores
               </div>

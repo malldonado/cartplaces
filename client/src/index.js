@@ -8,6 +8,8 @@ import Register from "./components/Register";
 import Products from "./components/index/Products.jsx";
 import Account from "./components/Account.jsx";
 import Wishlist from "./components/Wishlist.jsx";
+import Seller from "./components/Seller.jsx";
+// import Profile from "./components/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
     path: "/wishlist",
     element: <Wishlist/>
   },
+  {
+    path: "/seller",
+    element: <Seller/>
+  },
+  // {
+  //   path: "/profile",
+  //   element: <Profile/>
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

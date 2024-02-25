@@ -5,6 +5,7 @@ const cors = require('cors');
 const { readdirSync } = require('fs');
 const app = express();
 const dotenv = require('dotenv');
+const uploadImage = require('./middlewares/uploadImage');
 dotenv.config();
 
 //middlewares
@@ -13,6 +14,13 @@ app.use(express.json());
 
 //routes
 readdirSync('./routes/').map((r) => app.use('/', require('./routes/' + r)));
+
+app.post('/upload-image', uploadImage.single('image'), async (req, res) => {
+    return res.json({
+        erro: false,
+        message: "Upload image success!"
+    })
+})
 
 //database
 mongoose.connect(process.env.DATABASE_URL, {

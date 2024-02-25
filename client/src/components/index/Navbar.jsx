@@ -1,6 +1,6 @@
 import React from "react";
 import { RiShoppingBag3Line } from "react-icons/ri";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaGoogle } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import {
@@ -115,6 +115,19 @@ function Navbar() {
                     <button className="w-full h-[40px] bg-[#2144e1] mt-4 text-white nunito-font rounded-md">
                       Login
                     </button>
+                    <button className="w-full h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
+                      <FaGoogle className="mr-2" />
+                      Sing in with Google
+                    </button>
+                    <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
+                      Don`t you have an account?{" "}
+                      <Link
+                        className="text-[#2144e1] text-[15px] font-bold"
+                        to="/register"
+                      >
+                        Sing up
+                      </Link>
+                    </p>
                   </form>
                 </div>
               </div>

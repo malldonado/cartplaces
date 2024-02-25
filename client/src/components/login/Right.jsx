@@ -3,6 +3,7 @@ import LogoIndex from "../../images/logo/logo.svg";
 import Index from "../Index";
 import { Link } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaGoogle } from "react-icons/fa";
 import "../index.css";
 
 function Right() {
@@ -55,6 +56,10 @@ function Right() {
             </div>
             <button className="w-full h-[40px] bg-[#2144e1] mt-4 text-white nunito-font rounded-md">
               Login
+            </button>
+            <button className="w-full h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
+              <FaGoogle className="mr-2" />
+              Sing in with Google
             </button>
             <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
               Don`t you have an account?{" "}
