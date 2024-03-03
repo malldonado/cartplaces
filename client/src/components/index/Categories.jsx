@@ -18,6 +18,7 @@ function Categories() {
         const jsonData = await response.json();
         setData(jsonData);
         console.log(jsonData)
+        
       } catch (error) {
         setError(error);
       } finally {
@@ -54,8 +55,8 @@ function Categories() {
        <div className="cursor-pointer relative">
          {data.map(datas => (
           <div key={datas._id}>
-            <img className="h-[150px]" src={datas.src} alt="" />
-            <p className="text-center text-[16px] font-bold mt-2">{datas.name}</p>
+            <img className="h-[150px]" src={`data:image/png;base64,${datas.image.data}`} alt="Imagem" />
+            <p className="text-center text-[16px] font-bold mt-2">{datas.title}</p>
           </div>
         ))}
        </div>
