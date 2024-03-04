@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const categoriesSchema = mongoose.Schema(
   {
-    title: String,
-    filename: String,
-    contentType: String,
+    // title: String,
+    // filename: String,
+    // contentType: String,
     image: Buffer
   },
   {

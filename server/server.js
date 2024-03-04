@@ -10,6 +10,7 @@ dotenv.config();
 //middlewares
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 app.use(express.urlencoded({
   extended: true
 }));
@@ -34,28 +35,4 @@ mongoose
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("Server is running on port 8000");
-});
-
-//---------------------------------------
-
-const AWS = require("aws-sdk");
-
-const s3 = new AWS.S3({
-  accessKeyId: "AKIA3UEWBFEIISLOPCDN",
-  secretAccessKey: "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",
-});
-
-
-const params = {
-  Bucket: 'cartplaces',
-  Key: 'camiseta.jpg',
-  Body: './uploads/1.jpg' // Pode ser um buffer, stream ou objeto de arquivo local
-};
-
-s3.upload(params, (err, data) => {
-  if (err) {
-    console.error('Erro ao fazer upload:', err);
-    return;
-  }
-  console.log('Upload bem-sucedido. URL da imagem:', data.Location);
 });

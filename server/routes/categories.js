@@ -8,6 +8,5 @@ const upload = multer({ storage: storage });
 
 router.post('/categories', upload.single('image'), Categories.categories);
 router.get('/categories', Categories.categoriesData);
-router.get('/categories-decode', Categories.categoriesDecode);
 
 module.exports = router;

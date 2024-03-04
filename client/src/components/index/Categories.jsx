@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowBack  } from "react-icons/io";
-import Image from '../../images/index/1.png'
+import axios from 'axios';
 
 function Categories() {
 
@@ -15,9 +15,10 @@ function Categories() {
         if (!response.ok) {
           throw new Error("Erro ao carregar os dados");
         }
-        const jsonData = await response.json();
-        setData(jsonData);
-        console.log(jsonData)
+        // const jsonData = await response.json();
+        console.log(response)
+        setData(response);
+        // console.log(jsonData)
         
       } catch (error) {
         setError(error);
@@ -55,8 +56,9 @@ function Categories() {
        <div className="cursor-pointer relative">
          {data.map(datas => (
           <div key={datas._id}>
-            <img className="h-[150px]" src={`data:image/png;base64,${datas.image.data}`} alt="Imagem" />
-            <p className="text-center text-[16px] font-bold mt-2">{datas.title}</p>
+            {/* <img className="h-[150px]" src={datas.image.data} alt="" /> */}
+            <img className="h-[150px]" src={`data:image/png;base64,${datas.image}`} alt="Imagem" />
+            {/* <p className="text-center text-[16px] font-bold mt-2">{datas.title}</p> */}
           </div>
         ))}
        </div>
