@@ -10,6 +10,7 @@ import Account from "./components/Account.jsx";
 import Wishlist from "./components/Wishlist.jsx";
 import Seller from "./components/Seller.jsx";
 import Product from "./components/Product.jsx";
+import Store from "./components/Store.jsx";
 // import Profile from "./components/Profile.jsx";
 
 const router = createBrowserRouter([
@@ -45,10 +46,10 @@ const router = createBrowserRouter([
     path: "/product",
     element: <Product/>
   },
-  // {
-  //   path: "/profile",
-  //   element: <Profile/>
-  // },
+  {
+    path: "/store",
+    element: <Store/>
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

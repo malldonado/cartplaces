@@ -11,7 +11,7 @@ function Index() {
     <div>
       <Navbar/>
       <Banner/>
-      <Categories/>
+      {/* <Categories/> */}
       <Products/>
       <Featured/>
       <Footer/>

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Schema;
-const userSchema = mongoose.Schema(
+const SellerSchema = mongoose.Schema(
   {
     nameSeller: {
       type: String,
@@ -27,4 +27,4 @@ const userSchema = mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Seller", userSchema);
+module.exports = mongoose.model("Seller", SellerSchema);

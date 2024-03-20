@@ -14,8 +14,8 @@ function Footer() {
             <Link to='/'>
               <img className="h-[36px] mb-8 cursor-pointer" src={Logo} alt="" />
             </Link>
-            <li>000 Street street street, 13000-000</li>
-            <li>São Paulo / SP</li>
+            <li>8 W.South St.Buford, GA 30518</li>
+            <li>5 Briarwood LaneVienna, VA 22180 RER</li>
             <li className="flex justify-start gap-3 mt-4">
               <span className="text-[26px] cursor-pointer" href="">
                 <FaFacebookSquare />
@@ -30,17 +30,17 @@ function Footer() {
           </ul>
         </div>
         <div className="items-center w-[30%] flex justify-center mt-[-30px]">
-          <ul className="text-white flex flex-col">
-            <li className="text-[22px] font-medium mb-6 mt-8">Quick Access</li>
-            <Link to={'/wishlist'} className="mb-3 cursor-pointer">Wishlist</Link>
-            <Link to={'/account'} className="mb-3 cursor-pointer">Account</Link>
-            <li className="mb-3 cursor-pointer">Cart</li>
+          <ul className="text-white">
+            <li className="text-[22px] font-medium mb-6 mt-8">Company Info</li>
+            <li className="mb-3 cursor-pointer">About</li>
+            <li className="mb-3 cursor-pointer">Services</li>
+            <li>Blog</li>
           </ul>
         </div>
         <div className="items-center w-[30%] flex justify-center mt-[-30px]">
           <ul className="text-white">
             <li className="text-[22px] font-medium mb-6 mt-8">Contact</li>
-            <li className="mb-3">+00 00000-0000</li>
+            <li className="mb-3">+1100000-0000</li>
             <li className="mb-3">cartplaces@mail.com</li>
             <li>Phone: +1 12345678</li>
           </ul>

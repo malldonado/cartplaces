@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import Image from "../../images/index/Image.png";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (
@@ -24,7 +25,7 @@ function Products() {
         </div>
       </div>
       <div className="flex justify-center items-center h-auto mt-10">
-        <div className="cursor-pointer relative">
+        <Link to={'/product'} className="cursor-pointer relative">
           <div className="bg-[#2144e1] w-[110px] text-center font-bold p-0 text-white rounded-tr-[15px] rounded-bl-[20px] flex items-center h-[55px] leading-4 absolute bottom-[70px]">
             <div className="w-[60%] text-[46px] text-end tracking-tighter">
               15
@@ -41,7 +42,7 @@ function Products() {
               6 Days Remaining
             </p>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

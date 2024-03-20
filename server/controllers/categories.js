@@ -24,7 +24,7 @@ const categories = async (req, res) => {
 const categoriesData = async (req, res) => {
   try {
     const data = await Categories.find();
-    // console.log(data)
+    console.log(data)
   } catch (err) {
     res.status(500).json({
       success: false,
