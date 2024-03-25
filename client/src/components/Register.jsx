@@ -1,5 +1,5 @@
 import React from 'react'
-import Left from './register/Left'
+import Left from './login/Left'
 import Right from './register/Right'
 
 function Register() {

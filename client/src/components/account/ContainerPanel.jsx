@@ -5,7 +5,7 @@ import SplineLineChart from './SplineLineChart';
 
 function ContainerPanel() {
   return (
-    <div className="w-[80%]">
+    <div className="w-full">
       <div className="flex mt-14">
         <PanelTable/>
         {/* <PanelOrder/> */}

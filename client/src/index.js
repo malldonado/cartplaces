@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import axios from 'axios';
 import Index from "./components/Index.jsx";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -11,7 +12,12 @@ import Wishlist from "./components/Wishlist.jsx";
 import Seller from "./components/Seller.jsx";
 import Product from "./components/Product.jsx";
 import Store from "./components/Store.jsx";
+import Terms from "./components/Terms.jsx";
+import SellerProducts from "./components/SellerProducts.jsx";
 // import Profile from "./components/Profile.jsx";
+
+axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.withCredentials = true;
 
 const router = createBrowserRouter([
   {
@@ -49,6 +55,14 @@ const router = createBrowserRouter([
   {
     path: "/store",
     element: <Store/>
+  },
+  {
+    path: "/terms",
+    element: <Terms/>
+  },
+  {
+    path: "/seller-products",
+    element: <SellerProducts/>
   },
 ]);
 

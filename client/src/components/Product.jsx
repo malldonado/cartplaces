@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./product/Navbar";
+import Navbar from "./index/Navbar";
 import Description from "./product/Description";
 import Banner from "./product/Banner";
 import Products from "./product/Products";
-import Footer from "./product/Footer";
+import Footer from "./index/Footer";
 
 function Product() {
   return (

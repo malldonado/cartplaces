@@ -4,16 +4,16 @@ import ContainerPanel from "./account/ContainerPanel";
 import "./index.css";
 import Navbar from "./index/Navbar";
 
-function Account() {
+function SellerProducts() {
   return (
     <div className="bg-[#f9fafb] h-[100vh]">
       <Navbar />
       <div className="max-w-[1450px] h-[90vh] m-auto flex">
         <NavbarLeft />
-        <ContainerPanel />
+        {/* <ContainerPanel /> */}
       </div>
     </div>
   );
 }
 
-export default Account;
+export default SellerProducts;
